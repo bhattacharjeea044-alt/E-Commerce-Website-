@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKart - Online Shopping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            🛒 ShopKart
+        </a>
+
+        <div class="search">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+            <button onclick="searchProducts()">🔍</button>
+        </div>
+
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="wishlist.html">
+                ❤️ <span id="wishCount">0</span>
+            </a>
+            <a href="cart.html">
+                🛒 <span id="cartCount">0</span>
+            </a>
+            <a href="login.html">Login</a>
+        </div>
+
+    </nav>
+</header>
+
+
+<section class="hero">
+
+    <div>
+        <p class="badge">BIG SUMMER SALE</p>
+
+        <h1>
+            Shop Smart.<br>
+            Live Better.
+        </h1>
+
+        <p>
+            Discover fashion, electronics, home essentials
+            and more at amazing prices.
+        </p>
+
+        <a href="products.html" class="btn">
+            Shop Now →
+        </a>
+    </div>
+
+    <div class="hero-card">
+        🔥
+        <br>
+        <strong>UP TO 70% OFF</strong>
+        <br>
+        Selected Products
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>Shop by Category</h2>
+
+    <div class="categories">
+
+        <button onclick="goCategory('Fashion')">
+            👕
+            <span>Fashion</span>
+        </button>
+
+        <button onclick="goCategory('Electronics')">
+            💻
+            <span>Electronics</span>
+        </button>
+
+        <button onclick="goCategory('Home')">
+            🏠
+            <span>Home</span>
+        </button>
+
+        <button onclick="goCategory('Beauty')">
+            💄
+            <span>Beauty</span>
+        </button>
+
+        <button onclick="goCategory('Sports')">
+            ⚽
+            <span>Sports</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-head">
+
+        <h2>Featured Products</h2>
+
+        <a href="products.html">
+            View All →
+        </a>
+
+    </div>
+
+    <div
+        id="featuredProducts"
+        class="product-grid">
+    </div>
+
+</section>
+
+
+<section class="offer">
+
+    <h2>🎁 Special Offer</h2>
+
+    <p>
+        Get an extra <b>10% OFF</b>
+        on orders above ₹2,999.
+    </p>
+
+    <a href="products.html" class="btn">
+        Explore Deals
+    </a>
+
+</section>
+
+
+<footer>
+
+    <div>
+        <h2>🛒 ShopKart</h2>
+        <p>
+            Your one-stop online shopping destination.
+        </p>
+    </div>
+
+    <div>
+        <h3>Quick Links</h3>
+        <p>
+            Products · Wishlist · Cart · Orders
+        </p>
+    </div>
+
+    <div>
+        <h3>Contact</h3>
+        <p>
+            support@shopkart.com
+            <br>
+            +91 98765 43210
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

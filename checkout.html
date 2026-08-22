@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Checkout</title>
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+🛒 ShopKart
+</a>
+
+</nav>
+
+</header>
+
+
+<main class="section">
+
+<h1>
+Checkout
+</h1>
+
+
+<div class="checkout">
+
+<form id="checkoutForm">
+
+<h2>
+Delivery Information
+</h2>
+
+
+<input
+required
+placeholder="Full Name">
+
+
+<input
+required
+type="email"
+placeholder="Email">
+
+
+<input
+required
+placeholder="Phone Number">
+
+
+<textarea
+required
+placeholder="Full Address">
+</textarea>
+
+
+<input
+required
+placeholder="City">
+
+
+<input
+required
+placeholder="PIN Code">
+
+
+<h2>
+Payment Method
+</h2>
+
+
+<label>
+<input
+type="radio"
+name="pay"
+checked>
+
+Cash on Delivery
+</label>
+
+
+<label>
+<input
+type="radio"
+name="pay">
+
+UPI
+</label>
+
+
+<label>
+<input
+type="radio"
+name="pay">
+
+Credit/Debit Card
+</label>
+
+
+<button
+class="btn"
+type="submit">
+
+Place Order
+
+</button>
+
+</form>
+
+
+<div
+id="checkoutSummary"
+class="summary">
+</div>
+
+</div>
+
+</main>
+
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+renderCheckout();
+</script>
+
+</body>
+</html>

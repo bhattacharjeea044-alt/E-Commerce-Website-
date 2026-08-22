@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart</title>
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+🛒 ShopKart
+</a>
+
+<div class="navlinks">
+
+<a href="index.html">
+Home
+</a>
+
+<a href="products.html">
+Products
+</a>
+
+<a href="wishlist.html">
+❤️ <span id="wishCount">0</span>
+</a>
+
+<a href="cart.html">
+🛒 <span id="cartCount">0</span>
+</a>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<main class="section">
+
+<h1>
+Shopping Cart
+</h1>
+
+<div id="cartContent"></div>
+
+</main>
+
+
+<footer>
+© 2026 ShopKart
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+renderCart();
+</script>
+
+</body>
+</html>
